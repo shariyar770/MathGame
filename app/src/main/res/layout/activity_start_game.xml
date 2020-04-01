@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".StartGame">
+    tools:context=".GameActivity"
+    android:background="#1b5e20">
 
     <TextView
         android:id="@+id/startgametext"
@@ -17,6 +18,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="20dp"
+        android:textColor="#fff"
         />
 
     <Button
@@ -28,6 +30,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@id/belgi"
         android:layout_marginTop="40dp"
+        android:background="#eeff41"
         />
 
 
@@ -41,6 +44,7 @@
         app:layout_constraintStart_toEndOf="@id/firstNumber"
         app:layout_constraintEnd_toStartOf="@id/secondNumber"
         android:layout_marginTop="40dp"
+        android:background="#eeff41"
         />
 
     <Button
@@ -52,10 +56,12 @@
         app:layout_constraintStart_toEndOf="@id/belgi"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="40dp"
+        android:background="#eeff41"
         />
 
     <Button
         android:id="@+id/answer1"
+        android:onClick="onClick"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="25sp"
@@ -63,7 +69,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toStartOf="@id/answer2"
         app:layout_constraintStart_toStartOf="parent"
-        />
+        android:background="#eeff41"/>
 
     <Button
         android:id="@+id/answer2"
@@ -74,6 +80,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toEndOf="@id/answer1"
         app:layout_constraintEnd_toEndOf="parent"
+        android:background="#eeff41"
         />
 
     <Button
@@ -85,6 +92,7 @@
         app:layout_constraintTop_toBottomOf="@id/answer1"
         app:layout_constraintEnd_toStartOf="@id/answer4"
         android:layout_marginTop="20dp"
+        android:background="#eeff41"
         />
 
     <Button
@@ -96,11 +104,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/answer3"
         android:layout_marginTop="20dp"
+        android:background="#eeff41"
         />
 
 
     <Button
-        android:id="@+id/Nextbtn"
+        android:id="@+id/nextBtn"
         android:layout_width="wrap_content"
         android:text="Keyingi etap"
         android:layout_height="wrap_content"
@@ -108,15 +117,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/answer4"
+        android:background="#eeff41"
         />
 
     <Button
         android:id="@+id/schet_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/Nextbtn"
+        app:layout_constraintTop_toBottomOf="@id/nextBtn"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        android:background="#eeff41"
         />
 
     <ImageView

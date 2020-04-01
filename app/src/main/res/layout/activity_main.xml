@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:orientation="horizontal">
+    android:orientation="horizontal"
+    android:background="#e040fb">
 
    <TextView
        android:id="@+id/welcometext"
@@ -18,6 +19,7 @@
        app:layout_constraintTop_toTopOf="parent"
        app:layout_constraintEnd_toEndOf="parent"
        android:layout_marginTop="200dp"
+       android:textStyle="bold"
        />
 
     <Button
@@ -30,6 +32,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        android:background="#ccff90"
         />
 
     <Button
@@ -42,6 +45,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="10dp"
+        android:background="#ccff90"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

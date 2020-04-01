@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".GameOver">
+    tools:context=".GameOver"
+    android:background="#ff80ab">
 
     <TextView
         android:id="@+id/utildi"
@@ -40,6 +41,7 @@
         app:layout_constraintTop_toBottomOf="@id/utildi"
         android:textSize="25sp"
         android:layout_marginTop="50dp"
+        android:background="#ad1457"
         />
 
     <Button
@@ -52,6 +54,7 @@
         app:layout_constraintTop_toBottomOf="@id/janabas"
         android:textSize="25sp"
         android:layout_marginTop="10dp"
+        android:background="#ad1457"
         />
 
 
